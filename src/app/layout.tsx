@@ -30,7 +30,9 @@ export default function RootLayout({
         className={oswald.className}
       >
         <Header/>
+        <div className="min-h-screen">
         {children}
+        </div>
         <Footer/>
       </body>
     </html>

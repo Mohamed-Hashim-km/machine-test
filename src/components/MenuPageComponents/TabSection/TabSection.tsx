@@ -4,7 +4,7 @@ const TabSection = () => {
   return (
     
     <div
-      className="w-full py-4 flex justify-center bg-center bg-cover"
+      className="w-full py-6 flex justify-center bg-center bg-cover"
       style={{
         backgroundImage: "url('/images/MenuPageImages/tabBg.png')",
       }}
