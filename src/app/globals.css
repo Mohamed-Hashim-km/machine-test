@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #000000;
   --foreground: #171717;
 }
 
@@ -10,6 +10,21 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+}
+@theme {
+  --color-textGray: #BBBBBB;
+}
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-lg1: 1200px;
+  --breakpoint-lg2: 1300px;
+  --breakpoint-xl: 1580px;
+  --breakpoint-2xl: 2000px;
 }
 
 @media (prefers-color-scheme: dark) {
