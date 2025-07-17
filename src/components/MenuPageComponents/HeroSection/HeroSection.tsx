@@ -22,7 +22,7 @@ const HeroSection = () => {
           <span className="text-white text-[75px]">MENU</span>
         </h1>
         <p className="mt-4 text-lg md:text-base text-textGray max-w-xl mx-auto">
-         Please take a look at our menu featuring food, drinks, and brunch. If you'd like to place an order, use the "Order Online" button located below the menu.
+         Please take a look at our menu featuring food, drinks, and brunch. If you&apos;d like to place an order, use the &quot;Order Online&quot; button located below the menu.
         </p>
       </div>
     </section>
