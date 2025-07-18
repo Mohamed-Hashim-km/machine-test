@@ -15,6 +15,9 @@
 @theme {
   --color-textGray: #BBBBBB;
 }
+button{
+  cursor: pointer;
+}
 
 @theme {
   --breakpoint-*: initial;

@@ -6,7 +6,7 @@ const MenuSection = () => {
      <section
       className="bg-cover bg-center text-white py-12 px-6 md:px-24 relative"
       style={{
-        backgroundImage: "url('/images/menu-bg.jpg')", // 🔁 Your background image path
+        backgroundImage: "url('/images/MenuPageImages/menuCard.png')", // 🔁 Your background image path
       }}
     >
     
