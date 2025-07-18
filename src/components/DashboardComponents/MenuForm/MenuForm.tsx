@@ -10,7 +10,6 @@ import {
   createMenuItem,
 } from '@/services/menuItem';
 import { Menu } from '@/types/menu';
-import { MenuItem } from '@/types/menuItem';
 
 export default function DashboardPage() {
   const [menus, setMenus] = useState<Menu[]>([]);

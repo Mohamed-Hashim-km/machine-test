@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter, useParams } from 'next/navigation';
+import { useParams } from 'next/navigation';
 
 import { MenuItem } from '@/types/menuItem';
 import { Menu } from '@/types/menu';
@@ -9,7 +9,6 @@ import { getMenus } from '@/services/menu';
 import { deleteMenuItem, getMenuItemsByMenu, updateMenuItem } from '@/services/menuItem';
 
 export default function MenuDetailPage() {
-  const router = useRouter();
   const { id } = useParams();
   const [menu, setMenu] = useState<Menu | null>(null);
   const [items, setItems] = useState<MenuItem[]>([]);
@@ -41,7 +40,7 @@ export default function MenuDetailPage() {
     }
   }, [id]);
 
-  const handleDelete = async (itemId: string) => {
+  const handleDelete = async (itemId:any) => {
     await deleteMenuItem(itemId);
     setItems((prev) => prev.filter((item) => item._id !== itemId));
   };
@@ -50,7 +49,7 @@ export default function MenuDetailPage() {
     setEditItem(item);
     setEditForm({
       name: item.name,
-      description: item.description,
+      description: item.description ?? '',
       price: String(item.price),
     });
     setIsEditing(true);
@@ -65,7 +64,9 @@ export default function MenuDetailPage() {
       price: Number(editForm.price),
     };
 
-    const updatedItem = await updateMenuItem(editItem._id, updated);
+if (!editItem || !editItem._id) return;
+const updatedItem = await updateMenuItem(editItem._id, updated);
+
     setItems((prev) =>
       prev.map((i) => (i._id === updatedItem._id ? updatedItem : i))
     );

@@ -1,5 +1,4 @@
 
-import type { Metadata } from "next";
 import "./globals.css";
 
 import { Oswald } from 'next/font/google';
