@@ -111,7 +111,7 @@ export default function MenusPage() {
               {menu._id &&<button className="px-3 py-1 bg-red-500 text-white rounded" onClick={() => handleDelete(menu._id)}>
                 Delete
               </button>}
-              <Link href={`/menus/${menu._id}/items`}>
+              <Link href={`/dashboard/menus/${menu._id}`}>
                 <button className="px-3 py-1 bg-blue-500 text-white rounded">Show All Menu Items</button>
               </Link>
             </div>
