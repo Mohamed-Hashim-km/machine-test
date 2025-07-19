@@ -10,6 +10,7 @@ const navItems = [
   { label: "Menu", href: "/menu" },
   { label: "Make a Reservation", href: "/reservation" },
   { label: "Contact Us", href: "/contact" },
+  { label: "Dashboard", href: "/dashboard" },
 ];
 
 export default function Header() {

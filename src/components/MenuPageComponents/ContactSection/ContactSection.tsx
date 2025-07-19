@@ -21,7 +21,7 @@ const ContactSection = () => {
             <Instagram />
           </div>
         </div>
-        <div className="border cursor-text flex flex-col justify-center items-center border-[#C5A059] px-6 py-2 rounded-3xl">
+        <div className="border min-h-[16vh] lg:h-auto cursor-text flex flex-col justify-center items-center border-[#C5A059] px-6 py-2 rounded-3xl">
           <h3 className="text-[#C5A059] text-base font-semibold mb-4">CONNECT WITH US</h3>
           <p className="flex font-[400] text-sm items-center justify-center md:justify-start gap-3 mb-2">
             <Phone /> +91 1231231231
@@ -46,7 +46,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        <div className="border cursor-text border-[#C5A059] px-6 py-2 rounded-3xl">
+        <div className="border min-h-[16vh] lg:h-auto cursor-text border-[#C5A059] px-6 py-2 rounded-3xl">
           <div className="flex flex-col h-full items-center justify-center">
             <h3 className="text-[#C5A059] text-base font-semibold mb-4">FIND US</h3>
             <p className="flex items-start justify-center md:justify-start gap-10">
