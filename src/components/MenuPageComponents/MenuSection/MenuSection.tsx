@@ -16,7 +16,6 @@ interface Props {
 }
 
 const MenuSection: React.FC<Props> = ({ items, title, salads }) => {
-  console.log(items);
 
   return (
     <section className="relative min-h-[100vh] lg:min-h-[180vh] text-white py-16 px-6 md:px-16 overflow-hidden">

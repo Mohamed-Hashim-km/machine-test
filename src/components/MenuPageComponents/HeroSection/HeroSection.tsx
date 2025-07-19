@@ -3,7 +3,6 @@ import React from 'react'
 import heroBg from "../../../../public/Images/MenuPageImages/heroBg.jpg"
 import { Menu } from "@/types/menu";
 const HeroSection = ({menu}:{menu:M}) => {
-  console.log(menu)
   return (
      <section className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center text-white">
       {/* Background Image */}
