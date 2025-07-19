@@ -42,8 +42,8 @@ const MenuSection: React.FC<Props> = ({ items, title, salads }) => {
         <div className="text-center mt-[2rem] lg:mt-[8rem]">
           <h2 className="text-4xl md:text-5xl font-bold mb-2 text-gray-400 tracking-wider relative inline-block">
             <span
-              className="before:absolute before:left-[-3rem] before:top-1/2 before:w-10 lg:before:w-20 before:h-[2px] before:bg-gray-400 before:content-[''] 
-                            after:absolute after:right-[-3rem] after:top-1/2 after:w-10 lg:after:w-20 after:h-[2px] after:bg-gray-400 after:content-['']"
+              className="before:absolute before:left-[-3rem] lg:before:left-[-6rem] before:top-1/2 before:w-10 lg:before:w-20 before:h-[2px] before:bg-gray-400 before:content-[''] 
+                            after:absolute after:right-[-3rem] lg:after:right-[-6rem] after:top-1/2 after:w-10 lg:after:w-20 after:h-[2px] after:bg-gray-400 after:content-['']"
             >
               {title?.toUpperCase()}
             </span>
