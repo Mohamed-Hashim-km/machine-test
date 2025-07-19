@@ -77,6 +77,7 @@ const Page = () => {
           title={selectedMenu?.name}
           items={menuItems}
           salads={saladItems.length > 0 ? saladItems : undefined} />
+          
       </section>
 
       <section>

@@ -19,7 +19,7 @@ const HeroSection = ({menu}:{menu:M}) => {
 
       <div className="relative z-20 text-center px-4">
         <h1 className="text-5xl font-semibold text-white drop-shadow-lg">
-          <span className="text-white text-[75px]">MENU</span>
+          <span className="text-white drop-shadow-[4px_4px_0px_#a10225] text-[75px]">MENU</span>
         </h1>
         {<p className="mt-4 text-lg md:text-base text-textGray max-w-xl mx-auto">
         {menu?.description||"Please take a look at our menu featuring food, drinks, and brunch. If you had like to place an order, use the Order Online button located below the menu."}

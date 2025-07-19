@@ -39,12 +39,12 @@ const MenuSection: React.FC<Props> = ({ items, title, salads }) => {
 
       <div className="relative z-5 lg:max-w-6xl mx-auto px-5 lg:px-15">
         <div className="text-center mt-[2rem] lg:mt-[8rem]">
-          <h2 className="text-4xl md:text-5xl font-bold mb-2 text-gray-400 tracking-wider relative inline-block">
+          <h2 className="text-4xl md:text-5xl font-bold mb-2 text-white  tracking-wider relative inline-block">
             <span
               className="before:absolute before:left-[-3rem] lg:before:left-[-6rem] before:top-1/2 before:w-10 lg:before:w-20 before:h-[2px] before:bg-gray-400 before:content-[''] 
                             after:absolute after:right-[-3rem] lg:after:right-[-6rem] after:top-1/2 after:w-10 lg:after:w-20 after:h-[2px] after:bg-gray-400 after:content-['']"
             >
-              {title?.toUpperCase()}
+              <span className="drop-shadow-[4px_4px_0px_#a10225] md:text-[50px]">{title?.toUpperCase()}</span>
             </span>
           </h2>
         </div>
@@ -60,9 +60,9 @@ const MenuSection: React.FC<Props> = ({ items, title, salads }) => {
                       <span className="font-semibold tracking-wide whitespace-nowrap">{item.name.toUpperCase()}</span>
                       <div className="flex-grow border-b-4 border-dotted border-gray-500 mx-2 h-1"></div>
                     </div>
-                    <span className="text-gray-400 font-bold">${item.price}</span>
+                    <span className="text-white font-bold">${item.price}</span>
                   </div>
-                  {item.description && <p className="text-gray-300 text-sm mt-1 italic">{item.description}</p>}
+                  {item.description && <p className="text-textGray text-sm mt-1 italic">{item.description}</p>}
                 </div>
               ))}
           </div>
@@ -77,9 +77,9 @@ const MenuSection: React.FC<Props> = ({ items, title, salads }) => {
                       <span className="font-semibold tracking-wide whitespace-nowrap">{item.name.toUpperCase()}</span>
                       <div className="flex-grow border-b-4 border-dotted border-gray-500 mx-2 h-1"></div>
                     </div>
-                    <span className="text-gray-400 font-bold">${item.price}</span>
+                    <span className="text-white font-bold">${item.price}</span>
                   </div>
-                  {item.description && <p className="text-gray-300 text-sm mt-1 italic">{item.description}</p>}
+                  {item.description && <p className="text-textGray text-sm mt-1 italic">{item.description}</p>}
                 </div>
               ))}
           </div>
@@ -91,15 +91,15 @@ const MenuSection: React.FC<Props> = ({ items, title, salads }) => {
               <Image src={saladImage} alt="Fresh Salad" className="w-full h-full object-contain" />
             </div>
             <div className="text-center">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-400 mb-4 tracking-wider">SALADS</h3>
-              <p className="text-gray-300 text-sm mb-1 italic">Option to add protein</p>
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-wider">SALADS</h3>
+              <p className="text-textGray text-sm mb-1 italic">Option to add protein</p>
               <div className="w-46 h-1 pb-2 mx-auto mb-4"></div>
               {salads ? (
                 <div className="flex flex-col md:flex-row justify-center items-center gap-8 text-lg flex-wrap">
                   {salads?.map((salad, index) => (
                     <div key={index} className="flex justify-between items-center pb-1 min-w-64">
                       <div className="flex flex-grow items-center">
-                        <span className="font-semibold tracking-wide whitespace-nowrap">{salad.name.toUpperCase()}</span>
+                        <span className="font-semibold text-white tracking-wide whitespace-nowrap">{salad.name.toUpperCase()}</span>
                         <div className="flex-grow border-b-4 border-dotted border-gray-500 mx-2 h-1"></div>
                       </div>
                       <span className="text-gray-400 font-bold">${salad.price}</span>
